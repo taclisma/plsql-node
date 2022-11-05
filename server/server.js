@@ -2,9 +2,6 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
-const oracledb = require('oracledb');
-
-const connection = oracledb.getConnection({ user: "usuario", password: "senha", connectionString: "localhost/xepdb1" });
 
 app.use(express.static('public'))
 
